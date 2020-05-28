@@ -1,0 +1,31 @@
+.switcher {
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 1.5rem 0;
+  span {
+    padding-right: 1rem;
+    color: #cfd0cf;
+    font-weight: 300;
+  }
+
+  label {
+    background: rgba(35, 35, 35, 0.8);
+    padding: 0.3rem 1rem;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 300;
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+    }
+
+    input[type='button'] {
+      display: none;
+    }
+
+    &.active {
+      background: $color-red;
+    }
+  }
+}

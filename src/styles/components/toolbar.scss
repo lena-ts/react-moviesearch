@@ -1,0 +1,22 @@
+.toolbar-sorter {
+  background: $color-gray;
+  padding: 0 1rem;
+
+  .switcher {
+    text-align: right;
+  }
+
+  &__inner {
+    max-width: $content-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    min-height: 66px;
+  }
+
+  .total,
+  .films-by-genre {
+    font-weight: 600;
+  }
+}

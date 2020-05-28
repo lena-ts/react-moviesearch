@@ -1,0 +1,44 @@
+form {
+  display: flex;
+  flex-direction: column;
+  .search-wrapper {
+    display: flex;
+  }
+}
+
+button {
+  background: $color-red;
+  border: 1px solid $color-red;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type='text'] {
+  padding: 1rem 1rem;
+  background: rgba(35, 35, 35, 0.8);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-right: 0.8rem;
+  flex-grow: 2;
+  outline: none;
+  color: white;
+  transition: 0.2s;
+
+  &:focus {
+    box-shadow: 0 0 52px $color-red;
+    background: rgba(35, 35, 35, 0.8);
+  }
+}
+
+.search {
+  padding: 1rem 0 2rem;
+  max-width: $content-width;
+  margin: auto;
+}

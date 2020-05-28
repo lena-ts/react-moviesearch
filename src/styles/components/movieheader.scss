@@ -1,0 +1,66 @@
+.movie-header {
+  display: flex;
+  flex-direction: row;
+  max-width: $content-width;
+  margin: $indent-medium auto;
+
+  .image {
+    img {
+      max-width: 335px;
+    }
+  }
+
+  .content {
+    padding-left: $indent-medium * 2;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: top;
+      margin-top: $indent-medium;
+
+      h1 {
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+      }
+
+      div {
+        flex: none;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        color: $color-green;
+        border: 1px solid $color-gray-light;
+        border-radius: 100%;
+        font-size: $font-size__s;
+        font-weight: 200;
+        margin-left: $indent-base;
+      }
+    }
+
+    .tagline {
+      color: $color-gray-light-1;
+      font-weight: 200;
+      font-size: 0.9rem;
+      margin-bottom: $indent-medium;
+    }
+
+    .data {
+      color: $color-red;
+      font-size: $font-size__s;
+      font-weight: 300;
+
+      span {
+        padding-right: $indent-base;
+      }
+    }
+
+    .overview {
+      padding: $indent-base 0;
+      font-weight: 300;
+      line-height: $font-size__s;
+      color: $color-gray-light;
+    }
+  }
+}

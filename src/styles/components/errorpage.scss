@@ -1,0 +1,17 @@
+.error-page {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .highlight {
+    font-size: 10em;
+    font-weight: 800;
+    color: $color-red;
+  }
+
+  a {
+    color: $color-red;
+  }
+}
