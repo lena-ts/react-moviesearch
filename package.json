@@ -10,7 +10,7 @@
     "client:watch": "yarn client --watch",
     "server:watch": "yarn server --watch",
     "server:run": "nodemon dist/server.js",
-    "server:open": "open http://localhost:8080",
+    "server:open": "open http://localhost:8080/react-moviesearch",
     "server:start": "npm-run-all --parallel client:watch server:watch server:run server:open",
     "dev": "cross-env NODE_ENV=development webpack --config src/client/webpack.config.js --mode development",
     "build": "cross-env NODE_ENV=production webpack --config src/client/webpack.config.js --mode production",
