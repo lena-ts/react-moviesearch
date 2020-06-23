@@ -18,7 +18,7 @@ export class ErrorPage extends React.Component {
             <div className="highlight">404</div>
             <h2>Nothing found here</h2>
             <span>Go to </span>
-            <Link to="/">Homepage</Link>
+            <Link to="/react-moviesearch">Homepage</Link>
           </div>
         </div>
       </header>

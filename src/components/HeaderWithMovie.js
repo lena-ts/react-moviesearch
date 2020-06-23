@@ -13,7 +13,7 @@ const HeaderWithMovie = ({ showMoviePage, backToSearch, match }) => {
       <div className="container">
         <div className="logo-wrapper">
           <Logo />
-          <Link to="/">
+          <Link to="/react-moviesearch">
             <SearchIcon isSearch={!showMoviePage} backToSearch={backToSearch} />
           </Link>
         </div>

@@ -31,7 +31,7 @@ const sendResponse = (req, res, store = createStore(reducers)) => {
   res.send(html);
 };
 
-app.get('/', async (req, res) => {
+app.get('/react-moviesearch', async (req, res) => {
   const store = createStore(reducers);
 
   await fetchMovies()(store.dispatch, store.getState);
@@ -39,7 +39,7 @@ app.get('/', async (req, res) => {
   return sendResponse(req, res, store);
 });
 
-app.get('/movie/:id', async (req, res) => {
+app.get('/react-moviesearch/movie/:id', async (req, res) => {
   const store = createStore(reducers);
 
   await openMovie(req.params.id)(store.dispatch);
@@ -47,7 +47,7 @@ app.get('/movie/:id', async (req, res) => {
   return sendResponse(req, res, store);
 });
 
-app.get('/search/', async (req, res) => {
+app.get('/react-moviesearch/search/', async (req, res) => {
   const store = createStore(reducers);
 
   await searchMovies(req.query.searchValue, req.query.searchBy)(

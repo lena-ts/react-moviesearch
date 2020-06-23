@@ -44,7 +44,7 @@ export class Main extends React.Component {
     const { movies, isLoading } = this.props;
     //get movie list
     const movielist = movies.map(movie => (
-      <Link to={`/movie/${movie.id}`} key={movie.id}>
+      <Link to={`/react-moviesearch/movie/${movie.id}`} key={movie.id}>
         <MovieItem
           id={movie.id}
           img={movie.poster_path}

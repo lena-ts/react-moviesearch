@@ -75,7 +75,7 @@ class Search extends Component {
     });
     // console.log('HISTORY', this.props.history);
     this.props.history.push(
-      `search?searchValue=${this.state.searchValue}&searchBy=${searchBy}`
+      `/react-moviesearch/search?searchValue=${this.state.searchValue}&searchBy=${searchBy}`
     );
   };
 

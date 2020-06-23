@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import dynamic from 'next/dynamic';
 
 const HeaderDefault = dynamic(import('./HeaderDefault'));
@@ -12,9 +12,16 @@ const App = () => (
   <ErrorBoundary>
     <>
       <Switch>
-        <Route path="/" exact component={HeaderDefault} />
-        <Route path="/movie/:id" component={HeaderWithMovie} />
-        <Route path="/search" exact component={HeaderDefault} />
+        <Route path="/react-moviesearch" exact component={HeaderDefault} />
+        <Route
+          path="/react-moviesearch/movie/:id"
+          component={HeaderWithMovie}
+        />
+        <Route
+          path="/react-moviesearch/search"
+          exact
+          component={HeaderDefault}
+        />
         <Route component={ErrorPage} />
       </Switch>
       <Content />
