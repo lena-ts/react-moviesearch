@@ -12,7 +12,7 @@ const App = () => (
   <ErrorBoundary>
     <>
       <Switch>
-        <Route path="/react-moviesearch" exact component={HeaderDefault} />
+        <Route path="/react-moviesearch/" exact component={HeaderDefault} />
         <Route
           path="/react-moviesearch/movie/:id"
           component={HeaderWithMovie}

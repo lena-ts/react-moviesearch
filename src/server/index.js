@@ -31,7 +31,7 @@ const sendResponse = (req, res, store = createStore(reducers)) => {
   res.send(html);
 };
 
-app.get('/react-moviesearch', async (req, res) => {
+app.get('/react-moviesearch/', async (req, res) => {
   const store = createStore(reducers);
 
   await fetchMovies()(store.dispatch, store.getState);
